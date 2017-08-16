@@ -24,9 +24,9 @@
 		.left	{ float: left; }
 		.right	{ float: right; }
 		.work	{ text-align: center; }
-		.row	{ width: 100%; height: auto; display: flex; margin-bottom: 4%; clear: both; }
+		.row	{ width: 100%; height: auto; display: block; margin-bottom: 1%; clear: both; overflow: auto; }
 		.row a img	{ text-decoration: none; }
-		.first, .second, .third	{ max-width: 32%; display: block;  }
+		.first, .second, .third	{ max-width: 32%; display: block;  margin-bottom: 2%; }
 		.first, .second	{ float: left; }
 		.first	{ margin-right: 2%; }
 		.third	{ float: right; margin-left: 2%; }				
@@ -36,8 +36,11 @@
 		.footer h3 > a:before 	{ content: ""; position: absolute; width: 0; height: 2px; top: 25px; left: 0; background-color: #d52e36; visibility: hidden; transition: width 0.3s ease-in; }
 		.footer h3 > a:hover:before	{ visibility: visible; right: 0; left: auto; width:100%; }
 		
-		@media screen and (max-width: 640px) {
+		@media screen and (max-width: 949px) {
+			.container	{ width: 90%; }
 			.header, .footer { text-align: center; }
+			.row	{ margin-bottom: 0%; }
+			.first, .second, .third	{ width: 100%; max-width: 100%; display: block; margin-bottom: 5%;  }
 		}
 	</style>
 </head>
