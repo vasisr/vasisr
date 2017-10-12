@@ -54,11 +54,20 @@
 		textarea:focus, input[type=text]:focus	{ outline: none !important; }
 		.atWQWPQnbU-r-mOtebC4jQ	{ visibility: hidden !important; }
 		
+		h3#contact	{ margin-bottom: 10px; }
+		#contact-form	{ text-align: left; margin-bottom: 20px; }
+		input[type=text], input[type=email], textarea	{ border-radius: 5px; overflow: hidden; background-color: rgba(0,0,0,0.1); border: 1px solid transparent; padding: 8px !important; color: #071013; width: 100%; font-size: 16px !important; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif !important; }
+		textarea	{ height: 100px; }
+		input[type=submit]	{ background-color: #d52e36; border-color: transparent; color: #fff; font-family: 'Source Sans Pro', Helvetica,sans-serif; font-size: 18px; border-radius: 5px; padding: 0.5rem 1.75rem; cursor: pointer; }
+		fieldset 	{ border: none; margin: 0; padding: 10px 0;}
+		#contact-form .left, .right	{ width: 48%; }
+		
 		@media screen and (max-width: 949px) {
 			.container	{ max-width: 90%; }
 			.header, .footer { text-align: center; }
 			.row	{ margin-bottom: 0%; }
 			.first, .second, .third	{ width: 100%; max-width: 100%; display: block; margin-bottom: 5%;  }
+			#contact-form .left, .right	{ width: 100%; }
 		}
 	</style>
 	
@@ -240,10 +249,27 @@
 			</div>
 			
 			<h3 id="contact">Get in touch</h3>
+			<form action="https://formspree.io/vasi@abetterweb.in" method="POST" id="contact-form">
+				<fieldset class="field left">
+				 <label for="name">Name*</label><br>
+				 <input type="text" name="name" id="contact-name">
+				</fieldset>
+				<fieldset class="field right">
+				 <label for="_replyto">Email*</label><br>
+				 <input type="email" name="_replyto" id="contact-email">
+				</fieldset>
+				<fieldset class="field">
+				 <label for="message">Message*</label><br>
+				 <textarea type="text" name="message" id="message"></textarea>
+				</fieldset> 
+				<input type="submit" value="Submit">
+			</form>
+			<!--
 			<div class="cognito">
 				<script src="https://services.cognitoforms.com/s/XugRD6fks0OC-JVKSbmy0g"></script>
 				<script>Cognito.load("forms", { id: "1" });</script>
 			</div>
+			-->
 			
 		</div>
 		
