@@ -13,7 +13,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Source+Sans+Pro:400,700" rel="stylesheet">
 	<style>
 		body	{ font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; margin: 0;color: #071013; background-color: #f5eee8; font-size: 16px; }
-		h1, h2, h3, h4, h5, h6 	{ font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-weight:600; margin: 10px 0px;}
+		h1, h2, h3, h4, h5, h6 	{ font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-weight: 600; margin: 10px 0px;}
 		h1	{ font-size: 34px; margin: 10px 0px; }
 		h2	{ font-size: 24px; }  
 		a	{ text-decoration: none; color: #071013; }
@@ -52,9 +52,8 @@
 		.cognito .c-forms-form .c-label	{ font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif !important; font-weight: 400!important; font-size: 16px !important; }
 		.cognito .c-forms-form input[type=text], .cognito .c-forms-form textarea	{ font-size: 16px !important; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif !important; }	
 		textarea:focus, input[type=text]:focus	{ outline: none !important; }
-		.atWQWPQnbU-r-mOtebC4jQ	{ visibility: hidden !important; }
 		
-		h3#contact	{ margin-bottom: 10px; }
+		h3#contact	{ margin-bottom: 15px; }
 		#contact-form	{ text-align: left; margin-bottom: 20px; }
 		input[type=text], input[type=email], textarea	{ border-radius: 5px; overflow: hidden; background-color: rgba(0,0,0,0.1); border: 1px solid transparent; padding: 8px !important; margin-top: 5px; color: #071013; width: 100%; font-size: 16px !important; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif !important; }
 		textarea	{ height: 100px; }
@@ -117,141 +116,36 @@
 			<h2><a href="mailto:vasi@abetterweb.in">vasi@abetterweb.in</a></h2>			
 		</div>
 	
-		<div class="content" style="border-bottom:none;">
-			<h2>Web services for businesses and agencies<h2>
-			<p>We build beautiful, lightweight websites that work perfectly on desktop and mobile. We also do social media marketing, search and banner ads. See our work below and get in touch to <a href="contact.html">start your project</a>.</p>
+		<div class="content" style="border-bottom:none; border-top:none;">
+			<h2>Let's work together<h2>
+			<p>We can help you build a new website, add features to your existing site or start an online marketing campaign. Leave us a message with info about your project and we'll get right back to you.</p>			
 		</div>
 		
-		<div class="content"> 
+		<div class="content" style="border-top:none;"> 
 			
-			<h3>Recent Website Projects</h3>
-			<div class="row">
-				<div class="first">					
-					<a href="http://www.feldaglobal.com" target="_blank">
-					<img src="FGV.jpg" alt="Felda Global Ventures" />
-					</a>
-					Website Development & Maintenance					
-				</div>
-				<div class="second">
-					<a href="http://www.alrajhibank.com.my" target="_blank">
-					<img src="ARBM.jpg" alt="Al Rajhi Bank Malaysia" />
-					</a>
-					Custom CMS Development & Support
-				</div>
-				<div class="third">
-					<a href="https://thesoftwarepractice.com" target="_blank">
-					<img src="TSP.jpg" alt="The Software Practice" />
-					</a>
-					Web Development & Optimization
-				</div>
-			</div>
-			<div class="row">
-				<div class="first">
-					<a href="http://www.lh-ag.com" target="_blank">				
-					<img src="LHAG.jpg" alt="Lee Hishammuddin Allen & Gledhill" />
-					</a>
-					Development & Content Migration
-				</div>
-				<div class="second">
-					<a href="http://www.ace-training.org/" target="_blank">	
-					<img src="AceTraining.jpg" alt="Ace Training" />
-					</a>
-					Web Development & Branding	
-				</div>
-				<div class="third">
-					<a href="https://tantadan.in" target="_blank">	
-					<img src="TantadanDesign.jpg" alt="Tantadan Design" />
-					</a>
-					Template Customization
-				</div>
-			</div>
-			<div class="row">
-				<div class="first">
-					<a href="http://www.bodyworks.com.my/" target="_blank">				
-					<img src="Bodyworks.jpg" alt="Bodyworks Fitness & Dance Studio" />
-					</a>
-					Web Development
-				</div>
-				<div class="second">
-					<a href="http://www.smudge.in/" target="_blank">	
-					<img src="Smudge.jpg" alt="Smudge Design Studio" />
-					</a>
-					Website Development & Support
-				</div>
-				<div class="third">
-					<a href="http://klsmc.com/en/" target="_blank">	
-					<img src="KLSMC.jpg" alt="Kuala Lumpur Sports Medicine Centre" />
-					</a>
-					Website Support (Multilingual Site)
-				</div>
-			</div>
-			<div class="row">
-				<div class="first">
-					<a href="http://www.bodyworks.com.my/" target="_blank">				
-					<img src="NBT.jpg" alt="Next Big Tech Asia" />
-					</a>
-					Template Customization
-				</div>
-				<div class="second">
-					<a href="https://www.avesaviation.com/" target="_blank">	
-					<img src="Aves.jpg" alt="Aves Aviation Consulting" />
-					</a>
-					Website Development
-				</div>
-				<div class="third">
-					<a href="cc/index.html" target="_blank">	
-					<img src="CryoCord.jpg" alt="CryoCord Newsletter" />
-					</a>
-					eNewsletter Development
-				</div>
-			</div>
+			<!--<h3 id="contact">Get in touch</h3>-->
+			<form action="https://formspree.io/vasi@abetterweb.in" method="POST" id="contact-form">
+				<fieldset class="field left">
+				 <label for="name">Name*</label><br>
+				 <input type="text" name="name" id="contact-name" required>
+				</fieldset>
+				<fieldset class="field right">
+				 <label for="_replyto">Email*</label><br>
+				 <input type="email" name="_replyto" id="contact-email" required>
+				</fieldset>
+				<fieldset class="field">
+				 <label for="message">Message*</label><br>
+				 <textarea type="text" name="message" id="message" required></textarea>
+				</fieldset> 
+				<input type="submit" value="Submit">
+			</form>
 			
-			<h3>Internet Marketing Portfolio</h3>				
-			<div class="row">
-				<div class="first">
-					<a href="https://www.facebook.com/jagatthemovie/" target="_blank">				
-					<img src="Jagat.jpg" alt="Jagat - The Movie" />
-					</a>
-					Facebook Ad Buy and Page Management
-				</div>
-				<div class="second">
-					<a href="https://www.facebook.com/ogalitokl/" target="_blank">	
-					<img src="OGalito.jpg" alt="O'Galito Mediterranean Restaurant & Bar" />
-					</a>
-					Facebook & Instagram - Content Creation, Ad Buy & Page Management
-				</div>
-				<div class="third">
-					<a href="https://www.facebook.com/vasah13" target="_blank">	
-					<img src="Vasah.jpg" alt="Vasah India" />
-					</a>
-					Facebook Ad Buy & Management (Online Store)
-				</div>
-			</div>
-			<div class="row">
-				<div class="first">
-					<a href="https://www.facebook.com/LangkawiMagikal/" target="_blank">				
-					<img src="LangkawiMagikal.jpg" alt="Langkawi Magikal" />
-					</a>
-					Social Media Content Creation and Google, Facebook & Twitter Ads Management
-				</div>
-				<div class="second">
-					<a href="https://www.instagram.com/spiceofindiakl/" target="_blank">	
-					<img src="SpiceofIndia.jpg" alt="Spice of India" />
-					</a>
-					Social Media Content Creation (Oct - Dec 2016)
-				</div>
-				<div class="third">
-					<a href="http://www.affinbank.com.my/General/Promotions.aspx" target="_blank">	
-					<img src="AffinBank.jpg" alt="Affin Bank Promotions" />
-					</a>
-					Facebook Content Creation & Page Management (2014)
-				</div>				
-			</div>			
+			<p><a href="index.html">&lt;&lt; Back to our portfolio</a></p>
 			
 		</div>
 		
 
-		<div class="footer">
+		<div class="footer">			
 			<h2>a<span class="better">better</span>web<span class="better">.</span>in</h2>			
 		</div>
 	</div>	
