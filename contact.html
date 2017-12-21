@@ -30,7 +30,7 @@
 		.content h2	{ font-size: 30px; }
 		.content h3	{ font-size: 26px; text-align: left; margin: 20px 0px 30px; }
 		.content p	{ font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size:18px; font-weight: 400; }
-		.content a	{ text-decoration: underline; color: #d52e36; font-weight: bold;}
+		.content a	{ text-decoration: underline; color: #d52e36; /*font-weight: bold;*/}
 		.better	{ color: #d52e36; }
 		.left	{ float: left; }
 		.right	{ float: right; }
@@ -59,14 +59,18 @@
 		textarea	{ height: 100px; }
 		input[type=submit]	{ background-color: #d52e36; border-color: transparent; -webkit-border-color: transparent; -moz-border-color: transparent; color: #fff; font-family: 'Source Sans Pro', Helvetica,sans-serif; font-size: 18px; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; margin-top: 5px; padding: 0.5rem 1.75rem; cursor: pointer; -webkit-appearance: none; }
 		fieldset 	{ border: none; margin: 0; padding: 10px 0;}
-		#contact-form .left, .right	{ width: 48%; }
+		#contact-form .left, #contact-form .right	{ width: 48%; }
+		.contact-text .left { text-align: left; }
+		.contact-text .right { text-align: right; }
 		
 		@media screen and (max-width: 949px) {
 			.container	{ max-width: 90%; }
 			.header, .footer { text-align: center; }
 			.row	{ margin-bottom: 0%; }
 			.first, .second, .third	{ width: 100%; max-width: 100%; display: block; margin-bottom: 5%;  }
-			#contact-form .left, .right	{ width: 100%; }
+			#contact-form .left, #contact-form .right	{ width: 100%; }
+			.contact-text .left, .contact-text .right { text-align: center; width: 100%; }		
+			.contact-text .left { display: none; }
 		}
 	</style>
 	
@@ -139,10 +143,18 @@
 				</fieldset> 
 				<input type="submit" value="Submit">
 			</form>
-			<p>Email: <a href="mailto:vasi@abetterweb.in">vasi@abetterweb.in</a></p>
-			<p>Prefer talking to typing? Give us a call at <a href="tel:+919600070068">+91 96000 70068</a></p>
 			
-			<p><a href="index.html">&lt;&lt; Back to our portfolio</a></p>
+			<div class="row contact-text">
+				<div class="left">
+				<p>&nbsp;<br/>
+				<a href="index.html">&lt;&lt; Back to our portfolio</a></p>
+				</div>
+				
+				<div class="right">
+				<p>Email: <a href="mailto:vasi@abetterweb.in">vasi@abetterweb.in</a><br/>
+				Prefer talking to typing? Give us a call at <a href="tel:+919600070068">+91 96000 70068</a></p>
+				</div>			
+			</div>
 			
 		</div>
 		
